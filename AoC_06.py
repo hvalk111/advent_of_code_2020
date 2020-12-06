@@ -2254,14 +2254,14 @@ input_list = [i for i in input.split("\n\n")]
 for i in range(len(input_list)):
     input_list[i] = [k for k in input_list[i].split('\n')]
 
+print(input_list)
+
 
 hit = 0
 for sub_list in input_list:
-    print(sub_list)
     temp_string = ''
     for sub_string in sub_list:
         temp_string += sub_string
-    print(temp_string)
     temp_set = set(temp_string)
     for char in temp_set:
         if all(char in x for x in sub_list):
