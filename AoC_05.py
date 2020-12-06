@@ -983,7 +983,7 @@ print(max(id_list))
 
 unique, frequency = np.unique(row_list, return_counts = True)
 
-#print(np.where(frequency==7))
+print(np.where(frequency==7))
 
 temp = [i for i in range(len(row_list)) if row_list[i] == 81]
 
@@ -997,9 +997,5 @@ print(81*8+5)
 
 
     
-
-
-
-
 
 

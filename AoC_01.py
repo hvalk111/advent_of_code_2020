@@ -1,4 +1,4 @@
-import numpy as numpy
+import numpy as np
 
 input = """1664
 1939
