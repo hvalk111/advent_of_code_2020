@@ -2254,25 +2254,37 @@ input_list = [i for i in input.split("\n\n")]
 for i in range(len(input_list)):
     input_list[i] = [k for k in input_list[i].split('\n')]
 
-print(input_list)
 
 
 hit = 0
 for sub_list in input_list:
-    temp_string = ''
-    for sub_string in sub_list:
-        temp_string += sub_string
-    temp_set = set(temp_string)
-    for char in temp_set:
-        if all(char in x for x in sub_list):
+    list_len = len(sub_list)
+    for each_char in sub_list[0]:
+        count = 0
+        for other_elems in sub_list[1:list_len+1]:
+            if each_char in other_elems:
+                count += 1
+            else:
+                continue
+        if count == list_len - 1:
             hit += 1
-
 
 print(hit)
 
 
 
-
+#hit = 0
+#for sub_list in input_list:
+#    temp_string = ''
+#    for sub_string in sub_list:
+#        temp_string += sub_string
+#    temp_set = set(temp_string)
+#    for char in temp_set:
+#        if all(char in x for x in sub_list):
+#            hit += 1
+#
+#
+#print(hit)
 
 
 
