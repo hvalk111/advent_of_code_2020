@@ -717,6 +717,3 @@ except IndexError:
     
 
 
-
-
-
